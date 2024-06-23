@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1584</width>
+    <height>1168</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#lneKartSifresi{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#lneKartNO{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#dateSure{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#spnCVC{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#cmbKartTuru{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#lneIban{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#lneAd{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#lneSoyad{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#lneTCK{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#lneTelNo{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#cmbCinsiyet{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#spnBakiye{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#spnBorcMiktari{
+	background-color:#aa7aa0;
+	color:#000000
+}
+#btnEkle{
+	background-color:#7aaa84;
+	color:#000000
+}
+#btnSil{
+	background-color:#7aaa84;
+	color:#000000
+}
+#btnAra{
+	background-color:#7aaa84;
+	color:#000000
+}
+#btnGuncelle{
+	background-color:#7aaa84;
+	color:#000000
+}
+#btnListele{
+	background-color:#7aaa84;
+	color:#000000
+}
+#btnCikis{
+	background-color:#7aaa84;
+	color:#000000
+}
+
+QTableCornerButton::section
+{
+	background-color: #ced5e3;
+	border: none;
+    color: #fff;
+
+}
+</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1511</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Niagara Solid</family>
+      <pointsize>14</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 215, 227);</string>
+    </property>
+    <property name="title">
+     <string>BİLGİLER</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>190</y>
+       <width>551</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>                                     Son Ödeme Tarihi:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCalendarWidget" name="cwOdemeTarihi">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(34, 24, 32);
+background-color: rgb(122, 170, 161);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>491</width>
+       <height>254</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="font">
+         <font>
+          <family>Yu Gothic UI Semibold</family>
+          <pointsize>10</pointsize>
+          <weight>7</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string notr="true"/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Kart Şifresi:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lneKartSifresi">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="maxLength">
+         <number>4</number>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>4 haneli şifre girin.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Kredi Kartı No:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lneKartNO">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="inputMask">
+         <string>9999 9999 9999 9999</string>
+        </property>
+        <property name="maxLength">
+         <number>19</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Geçerlilik Süresi:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QDateEdit" name="dateSure">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Ay/Yıl</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="maximumDate">
+         <date>
+          <year>9999</year>
+          <month>12</month>
+          <day>31</day>
+         </date>
+        </property>
+        <property name="displayFormat">
+         <string notr="true">MM/yy</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="currentSectionIndex">
+         <number>0</number>
+        </property>
+        <property name="timeSpec">
+         <enum>Qt::LocalTime</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>CVC:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QSpinBox" name="spnCVC">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff
+</string>
+        </property>
+        <property name="suffix">
+         <string/>
+        </property>
+        <property name="minimum">
+         <number>100</number>
+        </property>
+        <property name="maximum">
+         <number>999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Kredi Kartı Türü:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="cmbKartTuru">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff
+</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Garanti Bankası kart </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ziraat Bankası kart</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>İş Bankası kart </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Denizbank kart </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Finansbank kart </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Akbank kart </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yapı Kredi kart</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>IBAN:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="lneIban">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff
+</string>
+        </property>
+        <property name="inputMask">
+         <string>TR 9999 9999 9999 9999 9999 9999</string>
+        </property>
+        <property name="text">
+         <string>TR      </string>
+        </property>
+        <property name="maxLength">
+         <number>32</number>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>KREDİ KARTI BİLGİLERİ:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="formLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>320</y>
+       <width>491</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Adı:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lneAd">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Soyadı:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lneSoyad">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>TC Kimlik No:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lneTCK">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="maxLength">
+         <number>11</number>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Telefon Numarası:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lneTelNo">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="inputMask">
+         <string>(999) 999 99 99</string>
+        </property>
+        <property name="text">
+         <string>()   </string>
+        </property>
+        <property name="maxLength">
+         <number>15</number>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Normal</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cinsiyet:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="cmbCinsiyet">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Kadın</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Erkek</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>KREDİ KARTI SAHİBİ BİLGİLERİ:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="formLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>40</y>
+       <width>481</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Bakiye:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="spnBakiye">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="suffix">
+         <string> TL</string>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Borç Miktarı:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spnBorcMiktari">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="suffix">
+         <string> TL</string>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Minimum Ödeme Tutarı:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spnMinOdeme">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="suffix">
+         <string> TL</string>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_20">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Nakit Avans Limiti:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="spnNakitAvans">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);
+color:#ffffff</string>
+        </property>
+        <property name="suffix">
+         <string> TL</string>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>570</y>
+       <width>1401</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnEkle">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Kayıt eklemek için tıklayınız...</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color: rgb(0, 0, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>KAYIT EKLE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAra">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Kayıt araması yapmak için tıklayınız...</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>KAYIT ARA</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnGuncelle">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Kayıt güncellemesi yapmak için tıklayınız...</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>KAYIT GÜNCELLE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSil">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Kayıt silmek için tıkayınız...</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>KAYIT SİL</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCikis">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Çıkış yapmak için tıklayınız...</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>ÇIKIŞ</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tblwKayitlar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>760</y>
+      <width>1521</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(122, 170, 161);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>100</number>
+    </property>
+    <property name="columnCount">
+     <number>17</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>200</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>730</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>KAYIT SAYISI:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblKayitSayisi">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>730</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1584</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuYardim">
+    <property name="title">
+     <string>Yardım</string>
+    </property>
+    <addaction name="menuHakkinda"/>
+   </widget>
+   <addaction name="menuYardim"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menuHakkinda">
+   <property name="text">
+    <string>Hakkında</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

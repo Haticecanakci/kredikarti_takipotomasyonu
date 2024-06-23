@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1285</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>1161</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Niagara Engraved</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 215, 227);
+</string>
+    </property>
+    <property name="title">
+     <string>HAKKINDA</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>1112</width>
+       <height>568</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);</string>
+        </property>
+        <property name="text">
+         <string>PROGRAMIN GENEL AMACI:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color:#ffffff;</string>
+        </property>
+        <property name="text">
+         <string>-Bu programın genel amacı, kredi kartı yönetimi için bir arayüz sağlamaktır.
+ -Kullanıcılar, programı kullanarak kredi kartı bilgilerini kolayca saklayabilir, güncelleyebilir ve yönetebilirler.
+ -Veritabanı kullanarak bilgilerin güvenli bir şekilde saklanması sağlanır ve kullanıcılar arasında paylaşılabilir.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);</string>
+        </property>
+        <property name="text">
+         <string>ARAYÜZ:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color:#ffffff</string>
+        </property>
+        <property name="text">
+         <string>- Kart Sahibinin Adı, Soyadı, TC Kimlik Numarası gibi temel bilgileri girilebilir.
+- Kredi kartı numarası, IBAN gibi finansal bilgiler girilebilir.
+- Kart Türü, Cinsiyet gibi seçeneklerin yer aldığı açılır menüler bulunur.
+- Kredi kartı bilgileri, kaydedilen tarihe göre listelenir ve tablo üzerinde gösterilir.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);</string>
+        </property>
+        <property name="text">
+         <string>VERİ TABANI:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color:#ffffff;</string>
+        </property>
+        <property name="text">
+         <string>- SQLite kullanılarak oluşturulan veritabanında kart bilgileri depolanır.
+- Veritabanı, program başlatıldığında otomatik olarak oluşturulur.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);</string>
+        </property>
+        <property name="text">
+         <string>EK BİLGİLER:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color:#ffffff</string>
+        </property>
+        <property name="text">
+         <string>- Programın kullanıcı adı ve şifresi sabit olarak belirlenmiştir: &quot;Hatice&quot; ve &quot;1111&quot;.
+- Programın genel amacı, kredi kartı yönetimi için basit bir arayüz sağlamaktır.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 122, 160);</string>
+        </property>
+        <property name="text">
+         <string>TEMEL İŞLEVLER:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font: 63 10pt &quot;Yu Gothic UI Semibold&quot;;
+background-color:#15849a;
+color:#ffffff</string>
+        </property>
+        <property name="text">
+         <string>-Ana pencerede, kullanıcılar kredi kartı bilgilerini ekleyebilir, güncelleyebilir, silebilir ve arayabilir.
+ -Kullanıcılar, giriş alanlarına kart bilgilerini girdikten sonra &quot;Ekle&quot; düğmesine tıklayarak yeni bir kart ekleyebilirler. Bu bilgiler, veritabanına eklenir.
+ -Kullanıcılar, tablodan bir kart seçip &quot;Güncelle&quot; düğmesine tıklayarak mevcut bir kartın bilgilerini güncelleyebilirler.
+- Kullanıcılar, tablodan bir kart seçip &quot;Sil&quot; düğmesine tıklayarak bir kartı silebilirler.
+ -Kullanıcılar, ad, soyad, kart türü gibi kriterlere göre kartları arayabilirler.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1285</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
